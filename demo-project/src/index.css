@@ -1,0 +1,11 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#logo-font {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: darkgreen;
+    padding-left: 100px;
+    font-weight: 600;
+}
