@@ -12,9 +12,21 @@
     text-decoration: none;
 }
 
+.navbar > .signup-btn > button {
+    border-radius: 4px;
+    border-color: grey;
+    color: black;
+    background-color: white;
+    box-shadow: 5px;
+    width: 80px;
+    height: 30px;
+    margin-left: 70vh;
+}
+
 .homepage-intro {
     display: flex;
-    max-height: 90vh;
+    height: 90vh;
+    background-color: red;
 }
 
 .homepage-intro-1 {
@@ -26,19 +38,29 @@
 .homepage-intro-1-inner {
     color: white;
     text-align: left;
-    margin: 50px 50px;
+    margin: 200px 150px;
+}
+
+.homepage-1-btn-section {
+    margin-top: 80px;
 }
 
 .homepage-1-btn-section > button {
     background-color: rgb(255, 199, 118);
     border-radius: 3px;
-    width: 100px;
     height: 50px;
+    width: 80%;
+    border-color: none;
+}
+
+.homepage-1-btn-section > button:hover {
+    background-color: darkkhaki;
 }
 
 .homepage-1-btn-section > button > a {
     text-decoration: none;
     color: darkgreen;
+    width: inherit;
 }
 
 .homepage-intro-2 {
@@ -46,5 +68,6 @@
 }
 
 .homepage-intro-2 > img {
-    width: 50vh;
+    max-height: inherit;
+    object-fit: contain;
 }

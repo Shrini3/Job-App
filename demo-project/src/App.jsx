@@ -7,6 +7,7 @@ import FreelanceJobs from "./pages/freelance-jobs"
 import Membership from "./pages/Membership"
 import Newsletter from "./pages/Newsletter"
 import Writers from "./pages/Writers"
+import Signup from "./pages/signup"
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="membership" element={<Membership/>}/>
         <Route path="newsletter" element={<Newsletter/>}/>
         <Route path="writers" element={<Writers/>}/>
+        <Route path="/signup" element={<Signup/>}/>
       </Route>
     </Routes>
    </BrowserRouter>
