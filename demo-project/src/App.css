@@ -27,6 +27,7 @@
     display: flex;
     height: 90vh;
     background-color: red;
+    margin: 0px;
 }
 
 .homepage-intro-1 {
@@ -68,6 +69,16 @@
 }
 
 .homepage-intro-2 > img {
-    max-height: inherit;
+    max-height: 90vh;
     object-fit: contain;
+}
+
+.homepage-jobs-info {
+    text-align: center;
+    height: 90vh;
+    margin: 15vh 20vh;
+}
+
+.homepage-jobs-info > p {
+    margin: 5vh;
 }

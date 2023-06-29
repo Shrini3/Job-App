@@ -8,7 +8,7 @@ export default function Navbar() {
                 <NavLink to="/jobs"
                  className={({isActive, isPending})=> {
                     return {color: isActive ? "darkgreen" : "grey",
-                    backgroundColor: isActive ? "c7f9cb": ""
+                            backgroundColor: isActive ? "c7f9cb": "",
                     }    
                  }}
                 >Jobs</NavLink>
