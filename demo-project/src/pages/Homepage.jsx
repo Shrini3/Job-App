@@ -1,14 +1,13 @@
 import {Link} from "react-router-dom"
-import { useState } from "react"
-import jobInfo from "./JobInfo"
+//import { useState } from "react"
+import JobInfo from "./JobInfo"
+import data from "/api/data"
 
 export default function Homepage() {
-    const [jobData, setJoBData] = useState(
-        fetch("./api/job")
-    )
-    function parse_job() {
-        return (jobData.map(x => {
-            <jobInfo 
+    //const [jobData, setJoBData] = useState(fetch(job))
+    const parseJob = data.map(x => {
+            return (
+            <JobInfo 
                 pfp={x.pfp}
                 title={x.title}
                 company_name={x.company_name}
@@ -17,8 +16,8 @@ export default function Homepage() {
                 team={x.team}
                 location={x.location}
             />
-        }))
-    }
+        )})
+    
 
     return (
        <div>
@@ -45,11 +44,11 @@ export default function Homepage() {
                     <p>We source writing jobs from job portals, newsletters, social media, 
                         communities and selected partners. With personalized filters you can easily find the jobs you care about.</p>
                     <div className="homepage-jobs-btn-section">
-                        <button>Browse writing jobs</button>
+                        <Link to="/jobs"><button>Browse writing jobs</button></Link>
                         <button>Hiring? Post a job</button>
                     </div>
                 </section>
-                {parse_job}
+                {parseJob}
             </section>
        </div>
     )
